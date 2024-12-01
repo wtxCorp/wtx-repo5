@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de Propósito y Autonomía</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #2c3e50;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .story-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .story-card {
+            background-color: var(--card-background);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .story-title {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .story-content {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .story-content.active {
+            display: block;
+        }
+
+        .narrative {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .insights {
+            background-color: #f7f9fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .error {
+            color: #e74c3c;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .story-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Historias de Propósito y Autonomía</h1>
+            <p>Selecciona una historia para ver más detalles</p>
+        </div>
+        <div class="story-container" id="storyContainer">
+            <div class="loading">Cargando historias...</div>
+        </div>
+    </div>
+
+    <script>
+        const jsonUrls = [
+            'https://raw.githubusercontent.com/tuUsuario/tuRepositorio/main/stories-part1.json',
+            'https://raw.githubusercontent.com/tuUsuario/tuRepositorio/main/stories-part2.json',
+            'https://raw.githubusercontent.com/tuUsuario/tuRepositorio/main/stories-part3.json'
+        ];
+
+        async function fetchStories() {
+            try {
+                const responses = await Promise.all(jsonUrls.map(url => fetch(url)));
+                const jsonData = await Promise.all(responses.map(response => response.json()));
+                return jsonData.flatMap(data => data.stories);
+            } catch (error) {
+                console.error('Error fetching stories:', error);
+                throw error;
+            }
+        }
+
+        function createStoryCard(story) {
+            const card = document.createElement('div');
+            card.className = 'story-card';
+            
+            const content = `
+                <h2 class="story-title">${story.title}</h2>
+                <p>${story.theme_description || ''}</p>
+                <div class="story-content">
+                    ${story.story ? renderFullStory(story.story) : renderShortStory(story)}
+                    ${renderStudentInsights(story)}
+                </div>
+            `;
+            
+            card.innerHTML = content;
+            
+            card.addEventListener('click', () => {
+                const content = card.querySelector('.story-content');
+                content.classList.toggle('active');
+            });
+            
+            return card;
+        }
+
+        function renderFullStory(story) {
+            return `
+                <h3>Historia de ${story.protagonist}</h3>
+                <div class="narrative">
+                    ${story.narrative.map(line => `<p>${line}</p>`).join('')}
+                </div>
+            `;
+        }
+
+        function renderShortStory(story) {
+            return `
+                <div class="narrative">
+                    ${story.narrative.map(line => `<p>${line}</p>`).join('')}
+                </div>
+            `;
+        }
+
+        function renderStudentInsights(story) {
+            if (!story.student_insights && !story.student_warning) return '';
+
+            if (story.student_insights) {
+                return `
+                    <div class="insights">
+                        <h3>Lecciones para Estudiantes</h3>
+                        <p><strong>Propósito:</strong> ${story.student_insights.purpose_lesson}</p>
+                        <p><strong>Autonomía:</strong> ${story.student_insights.autonomy_lesson}</p>
+                        <p><strong>Aplicación:</strong> ${story.student_insights.application}</p>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="insights">
+                    <h3>Advertencias para Estudiantes</h3>
+                    <p><strong>Riesgo:</strong> ${story.student_warning.risk}</p>
+                    <p><strong>Consecuencia:</strong> ${story.student_warning.consequence}</p>
+                    <p><strong>Prevención:</strong> ${story.student_warning.prevention}</p>
+                </div>
+            `;
+        }
+
+        async function initializeApp() {
+            const container = document.getElementById('storyContainer');
+            
+            try {
+                const stories = await fetchStories();
+                container.innerHTML = '';
+                stories.forEach(story => {
+                    container.appendChild(createStoryCard(story));
+                });
+            } catch (error) {
+                container.innerHTML = `
+                    <div class="error">
+                        <h2>Error al cargar las historias</h2>
+                        <p>Por favor, intenta recargar la página</p>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>
