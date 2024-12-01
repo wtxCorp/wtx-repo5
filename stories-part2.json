@@ -1,0 +1,115 @@
+{
+  "theme": "Propósito y Autonomía en el Impacto Social",
+  "description": "Historias e insights sobre la contribución social y el cambio comunitario",
+  "stories": [
+    {
+      "id": 6,
+      "title": "Responsabilidad y Significado Personal",
+      "theme_description": "La autonomía en asumir responsabilidades profundiza el significado",
+      "story": {
+        "protagonist": "Elena",
+        "narrative": [
+          "Elena descubrió una crisis ambiental en su pequeño pueblo costero",
+          "Aunque no tenía experiencia en activismo, sintió la responsabilidad de actuar",
+          "Comenzó investigando y educándose sobre contaminación marina",
+          "Organizó reuniones comunitarias para crear conciencia sobre el problema",
+          "Su compromiso inspiró a otros a unirse a la causa",
+          "Asumió el liderazgo de un movimiento local de limpieza costera",
+          "Las autoridades comenzaron a prestar atención a sus propuestas",
+          "Su iniciativa personal se convirtió en un proyecto comunitario exitoso",
+          "La salud del ecosistema marino comenzó a mejorar",
+          "Su sentido de responsabilidad había catalizado un cambio significativo"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Tu educación te da herramientas para asumir responsabilidades significativas en tu comunidad",
+        "autonomy_lesson": "Tomar iniciativa en proyectos académicos desarrolla liderazgo y responsabilidad",
+        "application": "Buscar oportunidades de liderazgo en clubes estudiantiles o proyectos comunitarios"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Independencia y Contribución Activa",
+      "theme_description": "La autonomía en la ejecución permite contribuciones más efectivas",
+      "story": {
+        "protagonist": "Miguel",
+        "narrative": [
+          "Miguel desarrolló un estilo único de arte urbano con mensaje social",
+          "Sus murales comenzaron a transformar espacios abandonados en galerías públicas",
+          "Cada obra contaba historias de resiliencia comunitaria",
+          "Su independencia artística le permitió abordar temas controvertidos pero necesarios",
+          "Las comunidades comenzaron a solicitar sus intervenciones artísticas",
+          "Sus obras inspiraron diálogos importantes sobre cambio social",
+          "Jóvenes artistas locales comenzaron a seguir su ejemplo",
+          "El arte se convirtió en herramienta de transformación social",
+          "Su contribución independiente generó un movimiento artístico comprometido",
+          "El paisaje urbano se transformó en un manifiesto de esperanza"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Usar tus habilidades únicas para contribuir a causas importantes da significado a tu educación",
+        "autonomy_lesson": "Desarrollar tu propio estilo de aprendizaje y expresión es clave para destacar",
+        "application": "Encontrar formas creativas de aplicar lo aprendido en proyectos personales significativos"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Autogestión y Dirección Clara",
+      "theme_description": "La autonomía en la gestión permite perseguir eficazmente el propósito",
+      "story": {
+        "protagonist": "Carlos",
+        "narrative": [
+          "Carlos creó una plataforma digital para conectar agricultores locales con consumidores urbanos",
+          "Estableció un sistema personal riguroso para gestionar el creciente proyecto",
+          "Cada mañana dedicaba tiempo a planificar según las necesidades de ambas comunidades",
+          "Su clara visión le permitió priorizar efectivamente las tareas diarias",
+          "Los obstáculos logísticos se convirtieron en oportunidades de innovación",
+          "La plataforma creció de manera orgánica y sostenible",
+          "Su capacidad de autogestión mantuvo el proyecto alineado con su misión original",
+          "Los agricultores comenzaron a reportar mejoras significativas en sus ingresos",
+          "Las familias urbanas accedían a alimentos más frescos y sostenibles",
+          "Su gestión disciplinada había creado un puente efectivo entre dos mundos"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Una visión clara de cómo usar tu educación para resolver problemas reales guía tus decisiones académicas",
+        "autonomy_lesson": "La capacidad de gestionar proyectos independientes es una habilidad crucial para el futuro",
+        "application": "Practicar la gestión de proyectos académicos de forma independiente, estableciendo objetivos claros"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Propósito sin Autonomía - Historia de Manuel",
+      "theme_description": "Los riesgos de tener propósito sin desarrollar autonomía en el contexto social",
+      "narrative": [
+        "Manuel quería revolucionar la educación en su escuela, pero necesitaba aprobación para cada pequeño cambio",
+        "Las constantes negativas de la dirección fueron apagando su entusiasmo inicial",
+        "Sus ideas innovadoras quedaban atrapadas en el papeleo administrativo sin llegar a materializarse",
+        "La falta de autonomía convirtió su misión educativa en una serie de compromisos insatisfactorios",
+        "Su propósito educativo se vio limitado por la falta de libertad para innovar"
+      ],
+      "student_warning": {
+        "risk": "Permitir que las estructuras existentes limiten tu capacidad de innovación y cambio",
+        "consequence": "Puede resultar en frustración y pérdida de motivación para el cambio social",
+        "prevention": "Buscar espacios y formas creativas de implementar cambios dentro de las estructuras existentes"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Autonomía sin Propósito - Historia de Sara",
+      "theme_description": "Los riesgos de tener autonomía sin desarrollar propósito en el impacto social",
+      "narrative": [
+        "Sara había heredado suficiente dinero para ser independiente, pero sus días carecían de estructura y sentido",
+        "Viajaba por el mundo buscando algo que ni ella misma podía definir",
+        "Sus actividades, aunque variadas, no le proporcionaban satisfacción duradera",
+        "La ausencia de un propósito convertía su libertad en una carga",
+        "Su autonomía financiera no le garantizaba una vida significativa"
+      ],
+      "student_warning": {
+        "risk": "Tener recursos y libertad sin un propósito claro de contribución social",
+        "consequence": "Puede llevar a una vida de privilegio sin impacto significativo",
+        "prevention": "Identificar causas sociales importantes y alinear recursos y libertades con ellas"
+      }
+    }
+  ]
+}

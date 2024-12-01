@@ -1,0 +1,115 @@
+{
+  "theme": "Propósito y Autonomía en la Autenticidad Personal",
+  "description": "Historias e insights sobre la expresión auténtica y el desarrollo personal",
+  "stories": [
+    {
+      "id": 11,
+      "title": "Autenticidad y Alineación de Valores",
+      "theme_description": "La autonomía permite expresar valores auténticos y el propósito refuerza la expresión auténtica",
+      "story": {
+        "protagonist": "Pedro",
+        "narrative": [
+          "Pedro transformó su método de enseñanza en una escuela tradicional",
+          "Rechazó el enfoque estandarizado y desarrolló técnicas personalizadas",
+          "Sus clases se convirtieron en espacios de exploración y creatividad",
+          "Los padres inicialmente cuestionaron sus métodos poco convencionales",
+          "Los resultados comenzaron a hablar por sí mismos",
+          "Sus estudiantes mostraban mayor compromiso y aprendizaje significativo",
+          "Otros profesores se inspiraron en su enfoque auténtico",
+          "La escuela comenzó a adoptar elementos de su metodología",
+          "Su autenticidad había catalizado una revolución educativa",
+          "El ambiente escolar se transformó en uno de verdadero aprendizaje"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Encontrar formas de expresar tu autenticidad dentro del marco académico enriquece tu aprendizaje",
+        "autonomy_lesson": "Desarrollar métodos de estudio personalizados que reflejen tu estilo de aprendizaje único",
+        "application": "Adaptar las metodologías de estudio tradicionales a tu forma personal de aprender y comprender"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Resistencia Social y Valores",
+      "theme_description": "La autonomía permite mantener valores frente a presiones sociales",
+      "story": {
+        "protagonist": "Isabel",
+        "narrative": [
+          "Isabel dirigía una empresa de moda sostenible en un mercado dominado por fast fashion",
+          "A pesar de las presiones competitivas, mantuvo sus estándares éticos de producción",
+          "Los proveedores intentaban tentarla con materiales más baratos pero menos sostenibles",
+          "Sus competidores la criticaban por sus precios más elevados",
+          "La presión de los inversionistas para reducir costos era constante",
+          "Sin embargo, su compromiso con la sostenibilidad permaneció inquebrantable",
+          "Gradualmente, los clientes comenzaron a valorar su transparencia y ética",
+          "Sus ventas crecieron de manera orgánica y sostenible",
+          "Los competidores empezaron a imitar sus prácticas éticas",
+          "Su resistencia había iniciado un cambio en la industria"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Mantener tus valores éticos y visión a largo plazo incluso cuando el camino sea difícil",
+        "autonomy_lesson": "Desarrollar la fortaleza para mantener tus principios frente a la presión de los pares",
+        "application": "Elegir caminos académicos y profesionales alineados con tus valores, incluso si no son los más populares"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Autodeterminación y Evolución del Propósito",
+      "theme_description": "La autonomía permite ajustar el propósito según el crecimiento personal",
+      "story": {
+        "protagonist": "Roberto",
+        "narrative": [
+          "Roberto comenzó su carrera como ejecutivo financiero exitoso",
+          "Durante años, acumuló logros profesionales y reconocimientos en el sector bancario",
+          "Un proyecto de educación financiera para jóvenes despertó una nueva pasión en él",
+          "Descubrió que su verdadera vocación era enseñar y empoderar a otros",
+          "Gradualmente, transformó su carrera hacia la educación y mentoría financiera",
+          "Creó programas innovadores para escuelas públicas",
+          "Sus estudiantes comenzaron a mostrar resultados extraordinarios en manejo financiero",
+          "La satisfacción que encontró superó sus expectativas iniciales",
+          "El propósito de su vida evolucionó naturalmente hacia el servicio educativo",
+          "Su impacto ahora se medía en vidas transformadas, no en números"
+        ]
+      },
+      "student_insights": {
+        "purpose_lesson": "Tu propósito académico puede evolucionar a medida que descubres nuevas pasiones y oportunidades",
+        "autonomy_lesson": "La capacidad de redireccionar tu camino académico según tus descubrimientos es vital",
+        "application": "Mantente abierto a explorar diferentes áreas de estudio y estar dispuesto a ajustar tu trayectoria"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Propósito sin Autonomía - Historia de Carmen",
+      "theme_description": "Los riesgos de tener propósito sin desarrollar autonomía en la expresión personal",
+      "narrative": [
+        "Carmen tenía una visión clara de su arte, pero se sentía atrapada por las expectativas del mercado",
+        "Sus galeristas insistían en que siguiera un estilo comercialmente exitoso",
+        "Aunque vendía bien, sentía que traicionaba su verdadera voz artística",
+        "La falta de autonomía creativa comenzó a afectar su pasión por el arte",
+        "Su propósito artístico se diluía en las demandas comerciales"
+      ],
+      "student_warning": {
+        "risk": "Sacrificar tu voz única por conformidad o expectativas externas",
+        "consequence": "Puede resultar en pérdida de pasión y autenticidad en tu trabajo",
+        "prevention": "Buscar un balance entre las demandas externas y tu expresión personal auténtica"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Autonomía sin Propósito - Historia de Pablo",
+      "theme_description": "Los riesgos de tener autonomía sin desarrollar propósito en el desarrollo personal",
+      "narrative": [
+        "Pablo había alcanzado la independencia financiera joven, pero sus días carecían de estructura y significado",
+        "Alternaba entre diferentes hobbies sin comprometerse realmente con ninguno",
+        "Su libertad se había convertido en una fuente de ansiedad existencial",
+        "La falta de propósito hacía que su autonomía se sintiera como una prisión dorada",
+        "Su vida era un ejemplo de cómo la libertad sin dirección puede ser abrumadora"
+      ],
+      "student_warning": {
+        "risk": "Tener libertad de elección sin un propósito claro que guíe las decisiones",
+        "consequence": "Puede resultar en indecisión, ansiedad y falta de realización personal",
+        "prevention": "Desarrollar un propósito claro que guíe tus decisiones y uso de la libertad"
+      }
+    }
+  ]
+}
